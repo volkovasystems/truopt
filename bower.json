@@ -1,0 +1,33 @@
+{
+  "name": "truopt",
+  "version": "0.0.0",
+  "description": "Create boolean based key-value option.",
+  "main": "truopt.deploy.js",
+  "support": "truopt.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "create",
+    "boolean",
+    "based",
+    "key-value",
+    "option",
+    "truopt"
+  ],
+  "homepage": "https://github.com/volkovasystems/truopt",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "doubt": "^0.26.0",
+    "falze": "^0.22.0",
+    "protype": "^0.21.0",
+    "truly": "^0.18.0"
+  }
+}
