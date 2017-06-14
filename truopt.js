@@ -35,6 +35,10 @@
 			"module": "truopt",
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon"
+			],
 			"repository": "https://github.com/volkovasystems/truopt.git",
 			"test": "truopt-test.js",
 			"global": true
