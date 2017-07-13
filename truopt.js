@@ -37,7 +37,7 @@
 			"eMail": "richeve.bebedor@gmail.com",
 			"contributors": [
 				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-				"Vinse Vinalon"
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
 			"repository": "https://github.com/volkovasystems/truopt.git",
 			"test": "truopt-test.js",
@@ -53,7 +53,6 @@
 		{
 			"doubt": "doubt",
 			"falze": "falze",
-			"protype": "protype",
 			"truly": "truly"
 		}
 	@end-include
@@ -61,7 +60,6 @@
 
 const doubt = require( "doubt" );
 const falze = require( "falze" );
-const protype = require( "protype" );
 const truly = require( "truly" );
 
 const truopt = function truopt( option ){
@@ -88,7 +86,7 @@ const truopt = function truopt( option ){
 		}, { } );
 	}
 
-	if( !protype( option, OBJECT ) ){
+	if( typeof option != "object" ){
 		throw new Error( "invalid option" );
 	}
 

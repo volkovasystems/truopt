@@ -37,7 +37,7 @@
               			"eMail": "richeve.bebedor@gmail.com",
               			"contributors": [
               				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-              				"Vinse Vinalon"
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
               			],
               			"repository": "https://github.com/volkovasystems/truopt.git",
               			"test": "truopt-test.js",
@@ -53,15 +53,13 @@
               		{
               			"doubt": "doubt",
               			"falze": "falze",
-              			"protype": "protype",
               			"truly": "truly"
               		}
               	@end-include
-              */var _keys = require("babel-runtime/core-js/object/keys");var _keys2 = _interopRequireDefault(_keys);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+              */var _keys = require("babel-runtime/core-js/object/keys");var _keys2 = _interopRequireDefault(_keys);var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var doubt = require("doubt");
 var falze = require("falze");
-var protype = require("protype");
 var truly = require("truly");
 
 var truopt = function truopt(option) {
@@ -88,7 +86,7 @@ var truopt = function truopt(option) {
 		}, {});
 	}
 
-	if (!protype(option, OBJECT)) {
+	if ((typeof option === "undefined" ? "undefined" : (0, _typeof3.default)(option)) != "object") {
 		throw new Error("invalid option");
 	}
 
