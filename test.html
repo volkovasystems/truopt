@@ -19,11 +19,11 @@
 			QUnit.test( "truopt unit test", function( assert ) {
 
 				assert.deepEqual( truopt( [ "orange", "apple" ] ),
-					{ "orange": true, "apple": true }, "should be deeply equal" );
+					{ "orange": true, "apple": true }, "should be equal to { 'orange': true, 'apple': true }" );
 
 				assert.deepEqual( truopt( { "orange": true, "apple": true } ),
-					{ "orange": true, "apple": true }, "should be deeply equal" );
-					
+					{ "orange": true, "apple": true }, "should be equal to { 'orange': true, 'apple': true }" );
+
 			} );
 		</script>
 	</body>
