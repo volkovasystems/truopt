@@ -25,5 +25,10 @@
 		"bower_components",
 		"test",
 		"tests"
-	]
+	],
+	"dependencies": {
+		"doubt": "^0.34.0",
+		"falze": "^0.26.0",
+		"truly": "^0.20.0"
+	}
 }

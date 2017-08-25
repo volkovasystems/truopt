@@ -66,6 +66,22 @@ const truopt = require( "./truopt.js" );
 
 describe( "truopt", ( ) => {
 
+	describe( "`truopt( [ 'orange', 'apple' ] )`", ( ) => {
+		it( "should be equal to { 'orange': true, 'apple': true }", ( ) => {
+
+			assert.deepEqual( truopt( [ "orange", "apple" ] ), { "orange": true, "apple": true } );
+
+		} );
+	} );
+
+	describe( "`truopt( { 'orange': true, 'apple': true } )`", ( ) => {
+		it( "should be equal to { 'orange': true, 'apple': true }", ( ) => {
+
+			assert.deepEqual( truopt( { "orange": true, "apple": true } ), { "orange": true, "apple": true } );
+
+		} );
+	} );
+
 } );
 
 //: @end-server

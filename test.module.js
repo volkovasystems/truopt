@@ -70,6 +70,22 @@ const path = require( "path" );
 
 describe( "truopt", ( ) => {
 
+	describe( "`truopt( [ 'orange', 'apple' ] )`", ( ) => {
+		it( "should be equal to { 'orange': true, 'apple': true }", ( ) => {
+
+			assert.deepEqual( truopt( [ "orange", "apple" ] ), { "orange": true, "apple": true } );
+
+		} );
+	} );
+
+	describe( "`truopt( { 'orange': true, 'apple': true } )`", ( ) => {
+		it( "should be equal to { 'orange': true, 'apple': true }", ( ) => {
+
+			assert.deepEqual( truopt( { "orange": true, "apple": true } ), { "orange": true, "apple": true } );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -79,6 +95,21 @@ describe( "truopt", ( ) => {
 
 describe( "truopt", ( ) => {
 
+	describe( "`truopt( [ 'orange', 'apple' ] )`", ( ) => {
+		it( "should be equal to { 'orange': true, 'apple': true }", ( ) => {
+
+			assert.deepEqual( truopt( [ "orange", "apple" ] ), { "orange": true, "apple": true } );
+
+		} );
+	} );
+
+	describe( "`truopt( { 'orange': true, 'apple': true } )`", ( ) => {
+		it( "should be equal to { 'orange': true, 'apple': true }", ( ) => {
+
+			assert.deepEqual( truopt( { "orange": true, "apple": true } ), { "orange": true, "apple": true } );
+
+		} );
+	} );
 
 } );
 
@@ -88,6 +119,40 @@ describe( "truopt", ( ) => {
 //: @bridge:
 
 describe( "truopt", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`truopt( [ 'orange', 'apple' ] )`", ( ) => {
+		it( "should be equal to { 'orange': true, 'apple': true }", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( truopt( [ "orange", "apple" ] ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), { "orange": true, "apple": true } );
+
+		} );
+	} );
+
+	describe( "`truopt( { 'orange': true, 'apple': true } )`", ( ) => {
+		it( "should be equal to { 'orange': true, 'apple': true }", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( truopt( { "orange": true, "apple": true } ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), { "orange": true, "apple": true } );
+
+		} );
+	} );
 
 } );
 

@@ -1,0 +1,116 @@
+{
+	"state": {
+		"passed": 2,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-25T06:47:44.908Z",
+	"end": "2017-08-25T06:48:25.077Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "truopt",
+			"duration": 0,
+			"start": "2017-08-25T06:48:24.737Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "truopt",
+			"duration": 159,
+			"start": "2017-08-25T06:48:24.738Z",
+			"end": "2017-08-25T06:48:24.897Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-25T06:48:24.739Z",
+					"end": "2017-08-25T06:48:24.740Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "truopt",
+					"associatedTest": "should be equal to { 'orange': true, 'apple': true }"
+				},
+				{
+					"start": "2017-08-25T06:48:24.849Z",
+					"end": "2017-08-25T06:48:24.849Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "truopt",
+					"associatedTest": "should be equal to { 'orange': true, 'apple': true }"
+				},
+				{
+					"start": "2017-08-25T06:48:24.850Z",
+					"end": "2017-08-25T06:48:24.850Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "truopt",
+					"associatedTest": "should be equal to { 'orange': true, 'apple': true }"
+				},
+				{
+					"start": "2017-08-25T06:48:24.897Z",
+					"end": "2017-08-25T06:48:24.897Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "truopt",
+					"associatedTest": "should be equal to { 'orange': true, 'apple': true }"
+				},
+				{
+					"start": "2017-08-25T06:48:24.897Z",
+					"end": "2017-08-25T06:48:24.898Z",
+					"duration": 1,
+					"title": "\"after all\" hook",
+					"associatedSuite": "truopt"
+				}
+			]
+		},
+		{
+			"name": "`truopt( [ 'orange', 'apple' ] )`",
+			"duration": 112,
+			"start": "2017-08-25T06:48:24.738Z",
+			"end": "2017-08-25T06:48:24.850Z",
+			"tests": [
+				{
+					"name": "should be equal to { 'orange': true, 'apple': true }",
+					"start": "2017-08-25T06:48:24.739Z",
+					"end": "2017-08-25T06:48:24.849Z",
+					"duration": 110,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`truopt( { 'orange': true, 'apple': true } )`",
+			"duration": 47,
+			"start": "2017-08-25T06:48:24.850Z",
+			"end": "2017-08-25T06:48:24.897Z",
+			"tests": [
+				{
+					"name": "should be equal to { 'orange': true, 'apple': true }",
+					"start": "2017-08-25T06:48:24.850Z",
+					"end": "2017-08-25T06:48:24.897Z",
+					"duration": 47,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

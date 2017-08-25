@@ -1,16 +1,46 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-10T11:25:56.260Z",
-    "end": "2017-08-10T11:25:56.260Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 3,
+		"tests": 2,
+		"passes": 2,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-25T06:47:43.552Z",
+		"end": "2017-08-25T06:47:43.561Z",
+		"duration": 9
+	},
+	"tests": [
+		{
+			"title": "should be equal to { 'orange': true, 'apple': true }",
+			"fullTitle": "truopt `truopt( [ 'orange', 'apple' ] )` should be equal to { 'orange': true, 'apple': true }",
+			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to { 'orange': true, 'apple': true }",
+			"fullTitle": "truopt `truopt( { 'orange': true, 'apple': true } )` should be equal to { 'orange': true, 'apple': true }",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to { 'orange': true, 'apple': true }",
+			"fullTitle": "truopt `truopt( [ 'orange', 'apple' ] )` should be equal to { 'orange': true, 'apple': true }",
+			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to { 'orange': true, 'apple': true }",
+			"fullTitle": "truopt `truopt( { 'orange': true, 'apple': true } )` should be equal to { 'orange': true, 'apple': true }",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
